@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  overflow-x: hidden;
+}
+body nav {
+  position: sticky;
+  background-color: white;
+  top: 0;
+  z-index: 5;
+}
+body nav ul {
+  display: flex;
+}
+body nav ul li {
+  list-style-type: none;
+  margin: 1rem;
+}
+body nav ul li a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+body nav ul li a:hover {
+  color: rgb(54, 212, 138);
+}
+body main section.main-area {
+  min-height: 70vh;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+body main div.info {
+  padding: 1rem;
+}
+body main div.info h1 {
+  font-size: 3.5rem;
+}
+body main div.info h2 {
+  font-size: 1rem;
+}
+body main div.info a {
+  color: white;
+  background-color: rgb(54, 212, 138);
+  padding: 0.25rem 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+body main div.info a:hover {
+  transform: scale(1.2);
+}
+body main div.img-area img {
+  width: 700px;
+  height: 400px;
+}
+body main section.about-me {
+  background-color: rgb(231, 255, 233);
+  padding: 5rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+body main section.about-me section.description {
+  width: 50%;
+  text-align: center;
+}
+body main section.about-me section.description h2 {
+  font-size: 2rem;
+}
+body main section.about-me section.description div.progress-bar-area p {
+  margin: 1rem;
+}
+body main section.resume {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+body main section.resume section.table {
+  flex: 5 0 500px;
+  padding: 2rem;
+}
+body main section.resume section.table table {
+  border-collapse: collapse;
+}
+body main section.resume section.table table tr {
+  border-bottom: 2px solid gray;
+  transition: all 0.5s ease;
+}
+body main section.resume section.table table tr:hover {
+  background-color: rgb(184, 255, 222);
+}
+body main section.resume section.table table tr td {
+  padding: 0.5rem;
+}
+body main section.resume section.picture {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+body main section.resume section.picture img {
+  width: 500px;
+  height: 700px;
+}
+body main section.resume section.picture div.greenRect {
+  width: 30vw;
+  height: 90vh;
+  border: 10px solid rgb(195, 255, 200);
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  z-index: -1;
+}
+body main section.resume section.picture div.greenRect2 {
+  width: 50vw;
+  height: 40vh;
+  border: 10px solid rgb(195, 255, 200);
+  position: absolute;
+  top: 300px;
+  left: -300px;
+  z-index: -1;
+}
+body main section.resume section.picture div.greenRect3 {
+  width: 50vw;
+  height: 40vh;
+  border: 10px solid rgb(195, 255, 200);
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  z-index: -1;
+}
+body main section.contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+body main section.contact div.left {
+  flex: 1 1 500px;
+}
+body main section.contact div.left img {
+  margin-top: 5rem;
+  background-color: rgba(195, 255, 200, 0.8);
+}
+body main section.contact div.left img:hover {
+  transform: rotateY("90deg");
+}
+body main section.contact div.right {
+  flex: 7 1 500px;
+}
+body main section.contact div.right h2, body main section.contact div.right h3 {
+  flex-direction: row;
+  transition: all 0.5s ease-in-out;
+}
+body main section.contact div.right h2:hover, body main section.contact div.right h3:hover {
+  background-color: rgba(216, 112, 147, 0.5);
+}
+body main section.contact div.right p {
+  flex-direction: column;
+  transition: all 0.5s ease;
+}
+body main section.contact div.right p:hover {
+  background-color: rgba(184, 255, 222, 0.5);
+}
+body main section.contact div.right a {
+  color: white;
+  background-color: rgb(54, 212, 138);
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+body main section.contact div.right a:hover {
+  transform: scale(1.2);
+}
+body main section.contact div.right ul li {
+  transition: all 0.5s ease;
+}
+body main section.contact div.right ul li:hover {
+  background-color: rgba(184, 255, 222, 0.5);
+}
+body main section.contact div.right table tr {
+  padding: 2rem;
+  transition: all 0.5s ease;
+}
+body main section.contact div.right table tr:hover {
+  background-color: rgba(184, 255, 222, 0.5);
+}
+body main section.contact div.right table tr td {
+  padding: 0.5rem;
+}
+body main section.contact div.right table tr td img {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  body main section.about-me section.description {
+    width: 80%;
+  }
+  body main section.resume {
+    overflow-x: auto;
+  }
+  body main section.resume section.picture div.greenRect, body main section.resume section.picture div.greenRect2, body main section.resume section.picture div.greenRect3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  body nav {
+    position: static;
+  }
+  body nav ul {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */

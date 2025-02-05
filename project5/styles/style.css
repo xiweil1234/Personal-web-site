@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+#myCanvas {
+  border: 5px solid lightgreen;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#myScore {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+#myScore, #myScore2 {
+  color: white;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+#start {
+  padding: 0.25rem 0.5rem;
+  background-color: yellow;
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 3.5rem;
+}/*# sourceMappingURL=style.css.map */
